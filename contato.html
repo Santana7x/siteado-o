@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - AdoptingAnimalsZoo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="imagens/logo.png" alt="Logo AdoptingAnimalsZoo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contato">
+    <h1>Entre em Contato Conosco</h1>
+
+    <!-- Formulário de Contato Geral -->
+    <section class="form-section">
+      <h2>📨 Envie uma Mensagem</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Formulário Seja Voluntário -->
+    <section class="form-section">
+      <h2 id="voluntario">🙋‍♀️ Seja Voluntário</h2>
+      <form action="#" method="post">
+        <label for="nome-voluntario">Nome:</label>
+        <input type="text" id="nome-voluntario" name="nome-voluntario" required>
+
+        <label for="email-voluntario">E-mail:</label>
+        <input type="email" id="email-voluntario" name="email-voluntario" required>
+
+        <label for="horarios">Horários disponíveis:</label>
+        <input type="text" id="horarios" name="horarios" placeholder="Ex: Fins de semana, à tarde" required>
+
+        <button type="submit">Quero ser voluntário</button>
+      </form>
+    </section>
+
+    <!-- Formulário de Doação de Suprimentos -->
+    <section class="form-section">
+      <h2 id="doacao">🎁 Doe Suprimentos</h2>
+      <form action="#" method="post">
+        <label for="nome-doador">Nome:</label>
+        <input type="text" id="nome-doador" name="nome-doador" required>
+
+        <label for="email-doador">E-mail:</label>
+        <input type="email" id="email-doador" name="email-doador" required>
+
+        <label for="item">Item que deseja doar:</label>
+        <input type="text" id="item" name="item" placeholder="Ração, cobertores, brinquedos..." required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="text" id="quantidade" name="quantidade" required>
+
+        <button type="submit">Oferecer doação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AdoptingAnimalsZoo. Desenvolvido pela equipe.</p>
+  </footer>
+</body>
+</html>

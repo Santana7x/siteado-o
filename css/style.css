@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @font-face {
   font-family: 'fonte';
-src: url("fonts/Nunito/Nunito-VariableFont_wght.ttf");
+src: url("Nunito/Nunito-VariableFont_wght.ttf");
 }
 
 html {
@@ -426,4 +426,74 @@ form button {
 form button:hover {
   background-color: #2563eb;
 }
-  
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .grid1, .grid2 {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .imagem-animal {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .textoan {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .formulario-doacao,
+  .login-form,
+  .contato {
+    padding: 1rem;
+  }
+
+  form input,
+  form textarea,
+  form select,
+  form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .form-section {
+    padding: 1rem;
+  }
+
+  .etapas,
+  .ajuda {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .etapa,
+  .card-ajuda {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+  }
+}
